@@ -17,4 +17,5 @@ collections:
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Image Caption", name: "imageAlt", widget: "string" }
+      - { label: "Layout", name: "layout", widget: "string", default: "article.njk" }
       - { label: "Body", name: "body", widget: "markdown" }
