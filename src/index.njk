@@ -1,0 +1,26 @@
+---
+layout: base.njk
+title: "Blog"
+---
+
+<div class="page_title">
+    <h1>Blog</h1>
+</div>
+
+<div class="blog_article_wrapper">
+    {% for post in collections.post %}
+    <div class="blog_article_item">
+        <div class="blog_item_image">
+            <img src={{post.data.image}} alt={{post.data.imageAlt}}>
+        </div>
+        <div class="blog_item_details">
+            <h4 class="blog_item_title">{{post.data.title}}</h4>
+            <div class="blog_item_posted_info"><span>by {{post.data.author}}</span>
+                <span>{{post.date | postDate}}</span>
+            </div>
+            <p>{{post.data.description}}</p>
+            <a href={{post.url}}>Read More</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>

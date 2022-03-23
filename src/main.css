@@ -1,0 +1,126 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #f7f7f7;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+.container,
+.container-fluid {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.blog_article_wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+}
+
+.blog_article_item {
+  width: 31%;
+}
+
+.blog_article_item {
+  width: 49%;
+  background-color: #ffffff;
+  padding: 3px;
+  border-radius: 5px;
+  margin-bottom: 1.4rem;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+  transition: ease-in-out 0.5s;
+}
+
+.blog_article_item:hover {
+  box-shadow: rgb(0 0 0 / 20%) 0px 4px 12px;
+}
+
+.blog_item_details {
+  padding: 1rem;
+}
+
+.blog_item_title {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+.blog_item_posted_info span {
+  font-size: 15px;
+  color: #666666;
+}
+
+.blog_item_posted_info span:first-child {
+  margin-right: 1rem;
+}
+
+.blog_item_details p {
+  color: #555555;
+  font-size: 15px;
+}
+
+.blog_item_details a {
+  color: #212529;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.blog_item_details a:hover {
+  text-decoration: underline;
+}
+
+.blog_item_image img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.page_title {
+  text-align: center;
+}
+
+.page_title h1 {
+  text-transform: uppercase;
+  margin: 0;
+}
