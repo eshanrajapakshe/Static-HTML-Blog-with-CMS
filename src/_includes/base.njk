@@ -5,19 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content={{metaTitle}}>
+    <meta name="description" content={{metaDescription}}>
+    <meta name="keywords" content={{metaKeywords}}>
     <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>{{title}}</title>
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 </head>
 
 <body>
-    <div class="container">
-        {% include "header.njk" %}
+    {% include "header.njk" %}
+    <div class="container custom-container">
         <main>
             {{ content | safe }}
         </main>
-        {% include "footer.njk" %}
+    </div>
+    {% include "footer.njk" %}
+
+    <div id="notify">
+        <p id="notify_text">Hi</p>
+        <button id="notify_close"><i class="fas fa-times"></i></button>
     </div>
 
     <script>

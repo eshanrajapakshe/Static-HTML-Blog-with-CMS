@@ -1,6 +1,7 @@
 *,
-::after,
-::before {
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -10,7 +11,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #f7f7f7;
+  background-color: #dfdfdf;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
 }
@@ -22,6 +23,53 @@ body {
   padding-left: 0.75rem;
   margin-right: auto;
   margin-left: auto;
+}
+
+.custom-container {
+  padding: 50px 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mt-1 {
+  margin-top: 1rem !important;
+}
+
+.mb-1 {
+  margin-bottom: 1rem !important;
+}
+
+.mt-2 {
+  margin-top: 2rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 2rem !important;
 }
 
 @media (min-width: 576px) {
@@ -81,6 +129,13 @@ body {
   text-transform: uppercase;
   margin-bottom: 5px;
   margin-top: 0;
+  line-height: 1.7;
+}
+
+.blog_item_subtitle {
+  margin-bottom: 5px;
+  margin-top: 2em;
+  line-height: 1.7;
 }
 
 .blog_item_posted_info span {
@@ -123,4 +178,288 @@ body {
 .page_title h1 {
   text-transform: uppercase;
   margin: 0;
+}
+
+.header_main {
+  background-color: #000;
+  height: 70px;
+  color: #fff;
+  top: 0;
+  left: auto;
+  right: 0;
+  position: sticky;
+  width: 100%;
+  display: flex;
+  z-index: 1100;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-direction: column;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+
+.header_inner {
+  margin: auto;
+  padding: 15px 0;
+}
+
+.logo-poruwa {
+  max-width: 150px;
+  height: 40px;
+  margin-right: 30px;
+  object-fit: contain;
+}
+
+.article-container-main {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.article-main-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+.article-content {
+  margin-top: 2em;
+  letter-spacing: -0.003em;
+  line-height: 32px;
+  font-size: 20px;
+  font-style: normal;
+  word-break: break-word;
+  color: rgba(41, 41, 41, 1);
+  font-weight: 400;
+}
+
+.footer-container {
+  background: #000;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-logo {
+  width: 180px;
+  margin-top: 15px;
+}
+
+.connect-with-us {
+  color: #f2f2f2;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
+
+.f_social_wrap img {
+  margin-top: 15px;
+  margin-right: 10px;
+  width: 30px;
+}
+
+.f-item-1 {
+  flex-grow: 0;
+  max-width: 33.333333%;
+  flex-basis: 33.333333%;
+}
+
+.f-item-2 {
+  flex-grow: 0;
+  max-width: 25%;
+  flex-basis: 25%;
+}
+
+.f-item-3 {
+  flex-grow: 0;
+  max-width: 41.666667%;
+  flex-basis: 41.666667%;
+}
+
+.footer_main_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-sec .link {
+  display: block;
+  color: #f2f2f2;
+  text-decoration: none;
+  margin-top: 23px;
+  font-size: 15px;
+}
+
+.footer-sec .about-us {
+  display: block;
+  color: #f2f2f2;
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.footer-sec .heading {
+  color: #f2f2f2;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  vertical-align: middle;
+}
+
+.footer-sec .non-link {
+  color: #f2f2f2;
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+.footer_location_wrapper {
+  display: flex;
+}
+
+.footer_loc_item {
+  flex-grow: 0;
+  max-width: 33.333333%;
+  flex-basis: 33.333333%;
+}
+
+.footer-sec .heading i {
+  margin-right: 10px;
+}
+
+.footer-sec .non-link a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.footer-sec .open {
+  color: #f2f2f2;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+.f_social_wrap a {
+  display: inline-block;
+}
+
+.footer_location_wrapper {
+  border-top: 1px solid #292929;
+  margin-top: 50px;
+}
+
+.footer-sec .non-link a:hover {
+  color: #fccd12;
+}
+
+.footer-sec .link:hover {
+  color: #fccd12;
+}
+
+.article_block {
+  max-width: 692px;
+  margin: 0 32px;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.article_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.article_share_wrapper a {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.article_share_wrapper a svg {
+  fill: #a8a8a8;
+}
+
+.article_share_wrapper a:hover svg {
+  fill: rgba(25, 25, 25, 1);
+}
+
+.article_share_wrapper {
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+.article_share_wrapper a:last-child {
+  margin-left: 1rem;
+}
+
+.figure_quote {
+  font-style: italic;
+  color: #636363;
+}
+
+.unstyled_list {
+  list-style: none;
+}
+
+#notify {
+  position: fixed;
+  top: 75px;
+  right: 1rem;
+  background-color: #000000;
+  display: flex;
+  min-width: 250px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  display: none;
+}
+
+#notify p {
+  margin: 0;
+  color: #ffffff;
+}
+
+#notify button {
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  min-width: 150px;
+  max-width: 200px;
+  font-size: 14px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
